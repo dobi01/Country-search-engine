@@ -10,34 +10,33 @@
 }
 
 main {
-  background: url(https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?w=1920&h=1080&auto=compress&cs=tinysrgb) no-repeat center / cover;
+  background: url(https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg?auto=compress&cs=tinysrgb&h=1631&w=2446) no-repeat center / cover;
   height: 100vh;
+  color: #000;
   .container {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 1000px;
     max-height: 100vh;
     h1 {
       padding: 60px 20px 30px;
       text-align: center;
-    }
-    button {
-      margin: 20px auto;
-      display: block;
+      color: #7800FF;
     }
     input {
       display: block;
-      margin: 20px auto 42vh;
+      margin: 20px auto 30px;
       background: inherit;
       outline: none !important;
       border-bottom: .5px solid #fff;
       padding: 5px 10px;
       font-size: 20px;
-      color: #fff;
+      color: #7800FF;
       line-height: 25px;
       width: 230px;
       text-align: center;
+      cursor: pointer;
       &::placeholder {
-        color: #fff;
+        color: #7800FF;
       }
       &:focus::placeholder {
         opacity: .5;
@@ -48,7 +47,7 @@ main {
       }
     }
     .row {
-      max-height: 190px;
+      max-height: 200px;
       overflow-y: auto;
       [class^="col-"] {
         float: left;
