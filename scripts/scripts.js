@@ -3,15 +3,15 @@ var url = 'https://restcountries.eu/rest/v2/name/',
     capitalsList = $('#capitals');
 
 function searchCountries() {
- 	var countryName = $('#country-name').val();
+  var countryName = $('#country-name').val();
   if (!countryName.length) {
     countryName = 'Poland';
   }
 
   $.ajax({
-		url: url + countryName,
-		method: 'GET',
-		success: showCountriesList
+    url: url + countryName,
+    method: 'GET',
+    success: showCountriesList
   });
 }
 
@@ -22,7 +22,7 @@ function showCountriesList(resp) {
     if (!item.capital.length) {
       $('<li>').text('no capital').appendTo(capitalsList);
     }
-   	$('<li>').text(item.name).appendTo(countriesList);
+    $('<li>').text(item.name).appendTo(countriesList);
     $('<li>').text(item.capital).appendTo(capitalsList);
   });
 }
